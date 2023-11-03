@@ -6,35 +6,33 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![Apache License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/Rekid46/AWS-architecture-for-ecommerce-website">
+  <a href="https://github.com/Farrugithub/ShopClues-E-commerce-case-study">
     <img src="images/icon.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Cloud Architecture for E-commerce website</h3>
+  <h3 align="center">ShopClues-E-commerce-case-study</h3>
 
   <p align="center">
     Host your e-commerce website on cloud.
     <br />
-    <a href="https://github.com/Rekid46/AWS-architecture-for-ecommerce-website"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Farrugithub/ShopClues-E-commerce-case-study"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Rekid46/AWS-architecture-for-ecommerce-website">View Demo</a>
+    <a href="https://github.com/Farrugithub/ShopClues-E-commerce-case-study">View Demo</a>
     ·
-    <a href="https://github.com/Rekid46/AWS-architecture-for-ecommerce-website/issues">Report Bug</a>
+    <a href="https://github.com/Farrugithub/ShopClues-E-commerce-case-study/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Rekid46/AWS-architecture-for-ecommerce-website/issues">Request Feature</a>
+    <a href="https://github.com/Farrugithub/ShopClues-E-commerce-case-study/issues">Request Feature</a>
   </p>
 </p>
 
@@ -61,7 +59,6 @@
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
 
@@ -138,7 +135,7 @@ Use this architecture to host and monitor a e-commerce website on AWS cloud in e
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/Rekid46/AWS-architecture-for-ecommerce-website/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/Farrugithub/ShopClues-E-commerce-case-study/issues) for a list of proposed features (and known issues).
 
 
 
@@ -162,14 +159,7 @@ Distributed under the Apache License. See `LICENSE` for more information.
 
 
 
-<!-- CONTACT -->
-## Contact
-
-Ranjan Singh : [@twitter_handle](https://twitter.com/lifeofranjan) 
-
-Email : Singhranjan9024@gmail.com
-
-Project Link: [https://rekid46.github.io/AWS-architecture-for-ecommerce-website/](https://rekid46.github.io/AWS-architecture-for-ecommerce-website/)
+Project Link: [https://github.com/Farrugithub/ShopClues-E-commerce-case-study/](https://github.com/Farrugithub/ShopClues-E-commerce-case-study/)
 
 
 
@@ -178,15 +168,13 @@ Project Link: [https://rekid46.github.io/AWS-architecture-for-ecommerce-website/
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/Rekid46/AWS-architecture-for-ecommerce-website.svg?style=for-the-badge
-[contributors-url]: https://github.com/Rekid46/AWS-architecture-for-ecommerce-website/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Rekid46/AWS-architecture-for-ecommerce-website.svg?style=for-the-badge
-[forks-url]: https://github.com/Rekid46/AWS-architecture-for-ecommerce-website/network/members
-[stars-shield]: https://img.shields.io/github/stars/Rekid46/AWS-architecture-for-ecommerce-website.svg?style=for-the-badge
-[stars-url]: https://github.com/Rekid46/AWS-architecture-for-ecommerce-website/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Rekid46/AWS-architecture-for-ecommerce-website.svg?style=for-the-badge
-[issues-url]: https://github.com/Rekid46/AWS-architecture-for-ecommerce-website/issues
-[license-shield]: https://img.shields.io/github/license/Rekid46/AWS-architecture-for-ecommerce-website.svg?style=for-the-badge
-[license-url]: https://github.com/Rekid46/AWS-architecture-for-ecommerce-website/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/ranjan-singh-335845206/
+[contributors-shield]: https://img.shields.io/github/contributors/Farrugithub/ShopClues-E-commerce-case-study.svg?style=for-the-badge
+[contributors-url]: https://github.com/Farrugithub/ShopClues-E-commerce-case-study/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Farrugithub/ShopClues-E-commerce-case-study.svg?style=for-the-badge
+[forks-url]: https://github.com/Farrugithub/ShopClues-E-commerce-case-study/network/members
+[stars-shield]: https://img.shields.io/github/stars/Farrugithub/ShopClues-E-commerce-case-study.svg?style=for-the-badge
+[stars-url]: https://github.com/Farrugithub/ShopClues-E-commerce-case-study/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Farrugithub/ShopClues-E-commerce-case-study.svg?style=for-the-badge
+[issues-url]: https://github.com/Farrugithub/ShopClues-E-commerce-case-study/issues
+[license-shield]: https://img.shields.io/github/license/Farrugithub/ShopClues-E-commerce-case-study.svg?style=for-the-badge
+[license-url]: https://github.com/Farrugithub/ShopClues-E-commerce-case-study/blob/master/LICENSE.txt
