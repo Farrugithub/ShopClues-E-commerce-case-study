@@ -125,6 +125,8 @@ Cost-Efficiency: Smart scaling and resource management keep costs in check.
 
 ## Appendix
 
+![image](https://github.com/Farrugithub/ecommerce-case-study/assets/144590727/c2040bf6-cb0e-4e56-8b47-17bf34dc4f9c)
+
 
 
 ![Image](https://github.com/users/Farrugithub/projects/4/assets/144590727/a040f809-a163-463b-908c-1fcb783ecdfb)
