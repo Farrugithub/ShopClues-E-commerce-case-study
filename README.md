@@ -1,132 +1,192 @@
-# ecommerce-case-study
-e-commerce platform designed for both rapid growth and large-scale online retail operations.
-# ShopClues - E-Commerce Web Application Case Study
-
-## Introduction
-
-Now for an e-commerce company is preparing to launch their operations, with an emphasis on successfully handling their annual sales event. This event is projected to attract a high volume of customers, resulting in millions of transactions on their online platform. The challenge is to design and implement a robust server infrastructure that can manage this surge in traffic and transaction volume without compromising performance or customer experience.
-
-## Architecture Design
-
-### Overview
-
-Explain the chosen architecture, why it's suitable, and its high-level components.
-
-### Detailed Design
-#### Network Infrastructure
-- VPC
-- Subnets
-- Route Tables
-- Internet Gateways
-
-#### Presentation Layer
-- Application Load Balancer
-- Content Delivery Network
-- WAF & Shield
-
-#### Application Layer
-
-- EC2 / ECS / EKS
-- Auto Scaling Groups
-- Microservices (MSA1, MSA2, MSA3)
-
-#### Data Layer
-
-- SQL Database (Amazon RDS)
-- NoSQL Database (Amazon DynamoDB)
-- Caching (Amazon ElastiCache)
-- File Storage (Amazon S3)
-
-#### Security
-- IAM Roles and Policies
-- Security Groups
-- NACLs
-- KMS for Key Management
-
-#### Logging and Monitoring
-- CloudWatch
-- CloudTrail
-- AWS X-Ray
-
-## Deployment Strategy
-
-Source Stage: Connect to a source code repository like GitHub or AWS CodeCommit.
-Build Stage: Use AWS CodeBuild to compile code, run tests, and create Docker images.
-Deploy Stage: Deploy the Docker images to ECS or EKS with the task definitions and service specifications defined as code
-
-## Security Measures
-WAF rules, encryption, and compliance standards.
-
-**encryption practices:**
-
-TLS for Data In Transit: Implement Transport Layer Security (TLS) by using AWS Certificate Manager (ACM) for managing SSL/TLS certificates, ensuring that data transmitted over the internet is secure.
-
-At-Rest Encryption: Enable encryption at rest for all data stores such as Amazon RDS for SQL databases, Amazon DynamoDB for NoSQL databases, and Amazon S3 for object storage, using AWS Key Management Service (KMS) for key management.
-
-**Security Considerations:**
-
-IAM Roles and Policies: Implement least privilege access by creating granular IAM roles and policies for every service and individual accessing the AWS environment.
-
-Network Security: Configure VPC security groups and NACLs to control inbound and outbound traffic, implement subnetting strategy to isolate resources, and use AWS Shield for DDoS protection.
-
-Monitoring and Logging: Leverage Amazon CloudWatch for monitoring and alarming, and ensure that logging with AWS CloudTrail is enabled across all accounts and services for an audit trail.
-
-Incident Response: Prepare an incident response plan and consider services like AWS GuardDuty for intelligent threat detection, and AWS Lambda for automated response to security incidents.
-
-Patch Management: Ensure that all EC2 instances and containers are regularly updated with the latest patches. AWS Systems Manager can automate this process.
-
-
-## Cost Optimization
-
-**1. Auto-Scaling:**
-Auto-Scaling Groups (ASGs): Use ASGs to automatically adjust the number of EC2 instances according to the demand. Set proper scaling policies based on CPU utilization, network traffic, or custom metrics.
-
-**Microservices Scaling:** Independently scale microservices based on their specific load patterns rather than scaling the entire application stack.
-
-**2. Reserved Instances and Savings Plans:**
-
-EC2 Reserved Instances: Purchase Reserved Instances for the baseline load to save up to 75% over on-demand instances.
-Savings Plans: Commit to a consistent amount of usage (e.g., compute or EC2) in exchange for a lower price compared to on-demand rates.
-
-**3. Spot Instances:**
-
-Leverage Spot Instances: Utilize spot instances for stateless or flexible workloads like batch processing, which can be interrupted without a significant impact on the business.
-
-**4. Right-Sizing:**
-
-Instance Right-Sizing: Regularly review and adjust the instance types and sizes to ensure they are the best fit for the workload requirements.
-
-**5. Containerization:**
-
-ECS/EKS with Fargate: Consider using AWS Fargate for running containers without having to manage servers or clusters, paying only for the compute and memory resources used.
-
-**6. Serverless Architectures:**
-
-AWS Lambda: Use serverless compute for certain microservices or event-driven components, where you pay per execution, not for idle compute capacity.
-
-**7. Storage Optimization:**
-
-S3 Storage Classes: Use S3 Intelligent-Tiering to automatically move data to the most cost-effective access tier.
-EBS Volume Types: Choose the right EBS volume type based on performance requirements and delete unattached or stale volumes.
-
-## Conclusion
-
-The proposed AWS cloud architecture provides a secure, scalable, and highly available solution for the e-commerce platform to efficiently handle peak traffic events like annual sales. Key outcomes include:
-
-High Availability: Ensures continuous operation using multiple Availability Zones and auto-scaling.
-
-Scalability: Handles traffic spikes with ease due to the microservices architecture and elastic resources.
-
-Security: Robust security measures protect against threats and ensure data integrity.
-
-Performance: Optimized for speed with caching and content delivery strategies.
-
-Cost-Efficiency: Smart scaling and resource management keep costs in check.
-
-## Appendix
-
-![image](https://github.com/Farrugithub/ecommerce-case-study/assets/144590727/c2040bf6-cb0e-4e56-8b47-17bf34dc4f9c)
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![Apache License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
-![Image](https://github.com/users/Farrugithub/projects/4/assets/144590727/a040f809-a163-463b-908c-1fcb783ecdfb)
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/Rekid46/AWS-architecture-for-ecommerce-website">
+    <img src="images/icon.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">Cloud Architecture for E-commerce website</h3>
+
+  <p align="center">
+    Host your e-commerce website on cloud.
+    <br />
+    <a href="https://github.com/Rekid46/AWS-architecture-for-ecommerce-website"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/Rekid46/AWS-architecture-for-ecommerce-website">View Demo</a>
+    ·
+    <a href="https://github.com/Rekid46/AWS-architecture-for-ecommerce-website/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/Rekid46/AWS-architecture-for-ecommerce-website/issues">Request Feature</a>
+  </p>
+</p>
+
+
+
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
+
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+E-commerce website on cloud
+
+Network, Application Diagram and Architecture to host and monitor a e-commerce website on AWS cloud in efficient manner.
+Services used are chosen in such a way that they will provide maximum throughput along with cost saving.
+![Network Diagram](images/Network.png?raw=true "Network Diagram")
+
+
+
+
+
+### Built With
+
+* Python
+* Flask Framework
+
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+To get a local copy up and running follow these simple steps.
+
+### Prerequisites
+
+All you need is a AWS account.Building these services and deploying is relatively easy.Ping me if you need help.
+* AWS account 
+
+
+### Installation
+
+Description:
+1. We will use M4 type EC2 instance to bear high computation and storage.
+2. Create a AMI with the instance and assign a Auto Scaling group.
+3. A Elastic Load Balancer with stickiness enabled to balance the network traffic efficiently.
+4. For backend database we will use RDS with multiple read replicas to store user data.
+5. AWS ElastiCache for fast performance and less reads from database using cache.
+6. We will use aws sns for email,text and other notifications.
+7. Amazon Cloudwatch for continuous health check and monitoring.
+8. Aws S3 for Static content and images and thumbnails.
+9. AWS Route53 for DNS and routing.
+10. AWS Cloudfront for for fast access to website through edge locations or delivering application.
+11. Aws cognito for identity check/credential check.
+12. Moreover we will use web clients for storing cookies and making website stateless.
+
+Step-wise description:
+1. User will access website and will be directed to route 53.
+2. Route 53 will direct the traffic towards Cloudfront which serves data or point towards ELB depending upon scenario along with cognito checking identity.
+3. ELB will direct traffic to EC2 ASG instances.
+4. Static website data like product images and thumbnails will be served through aws s3.
+5. ELB sticky session will make sure that user is connected to same instance.
+6. For database EC2 instance will check Elasticache if it is a cache-hit it will server data or it will look into RDS and cache data.
+7. Finally the data is served back to customer.
+8. SNS will help in notification services like order confirmation calls or other notifications (Using lambda function or APIs)
+9. CloudWatch will help to Monitor.
+
+Security Perspective:
+- Tight Security with security groups referencing each other. No instance or Database will be publicly accessible.
+
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+Use this architecture to host and monitor a e-commerce website on AWS cloud in efficient manner.
+
+
+<!-- ROADMAP -->
+## Roadmap
+
+See the [open issues](https://github.com/Rekid46/AWS-architecture-for-ecommerce-website/issues) for a list of proposed features (and known issues).
+
+
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the Apache License. See `LICENSE` for more information.
+
+
+
+<!-- CONTACT -->
+## Contact
+
+Ranjan Singh : [@twitter_handle](https://twitter.com/lifeofranjan) 
+
+Email : Singhranjan9024@gmail.com
+
+Project Link: [https://rekid46.github.io/AWS-architecture-for-ecommerce-website/](https://rekid46.github.io/AWS-architecture-for-ecommerce-website/)
+
+
+
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/Rekid46/AWS-architecture-for-ecommerce-website.svg?style=for-the-badge
+[contributors-url]: https://github.com/Rekid46/AWS-architecture-for-ecommerce-website/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Rekid46/AWS-architecture-for-ecommerce-website.svg?style=for-the-badge
+[forks-url]: https://github.com/Rekid46/AWS-architecture-for-ecommerce-website/network/members
+[stars-shield]: https://img.shields.io/github/stars/Rekid46/AWS-architecture-for-ecommerce-website.svg?style=for-the-badge
+[stars-url]: https://github.com/Rekid46/AWS-architecture-for-ecommerce-website/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Rekid46/AWS-architecture-for-ecommerce-website.svg?style=for-the-badge
+[issues-url]: https://github.com/Rekid46/AWS-architecture-for-ecommerce-website/issues
+[license-shield]: https://img.shields.io/github/license/Rekid46/AWS-architecture-for-ecommerce-website.svg?style=for-the-badge
+[license-url]: https://github.com/Rekid46/AWS-architecture-for-ecommerce-website/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/ranjan-singh-335845206/
